@@ -41,6 +41,28 @@ for (int i = 0; i < len; i++) {
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+/**
+- 双指针,快慢针处理
+
+开始时这两个指针都指向第一个数字
+
+如果两个指针指的数字相同，则快指针向前走一步
+
+如果不同，则两个指针都向前走一步
+
+当快指针走完整个数组后，慢指针当前的坐标加1就是数组中不同数字的个数
+*/
+
 func removeDuplicates(nums []int) int {
-	return 0
+	if len(nums) == 0 {
+		return 0
+	}
+	var slow int
+	for fast := 0; fast < len(nums); fast++ {
+		if nums[slow] != nums[fast] {
+			slow += 1
+			nums[slow] = nums[fast]
+		}
+	}
+	return slow + 1
 }
