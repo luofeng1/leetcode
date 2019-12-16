@@ -34,7 +34,7 @@
 - [ ] [575.distribute-candies](https://leetcode-cn.com/problems/distribute-candies) [golang-code](./575-distribute-candies.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/575.distribute-candies.md)
 
 ### 中等难度
-- [ ] [2. Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers) [golang-code](.2-add-two-numbers.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/2.addTwoNumbers.md)
+- [x] [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers) [golang-code](.2-add-two-numbers.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/2.addTwoNumbers.md)
 - [ ] [3. Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters) [golang-code](.3-longest-substring-without-repeating-characters.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/3.longestSubstringWithoutRepeatingCharacters.md)
 - [ ] [5.longest-palindromic-substring](https://leetcode-cn.com/problems/longest-palindromic-substring) [golang-code](./5-longest-palindromic-substring.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/5.longest-palindromic-substring.md)
 - [ ] [11.container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water) [golang-code](./11-container-with-most-water.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/11.container-with-most-water.md)
