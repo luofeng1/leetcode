@@ -16,6 +16,16 @@ func Test_lengthOfLongestSubstring(t *testing.T) {
 			args: args{s: "abcabcbb"},
 			want: 3,
 		},
+		{
+			name: "aaaaaa",
+			args: args{s: "aaaaaa"},
+			want: 1,
+		},
+		{
+			name: "au",
+			args: args{s: "au"},
+			want: 2,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -35,7 +35,7 @@
 
 ### 中等难度
 - [x] [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers) [golang-code](.2-add-two-numbers.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/2.addTwoNumbers.md)
-- [ ] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters) [golang-code](.3-longest-substring-without-repeating-characters.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/3.longestSubstringWithoutRepeatingCharacters.md)
+- [x] [3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters) [golang-code](.3-longest-substring-without-repeating-characters.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/3.longestSubstringWithoutRepeatingCharacters.md)
 - [ ] [5.longest-palindromic-substring](https://leetcode-cn.com/problems/longest-palindromic-substring) [golang-code](./5-longest-palindromic-substring.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/5.longest-palindromic-substring.md)
 - [ ] [11.container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water) [golang-code](./11-container-with-most-water.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/11.container-with-most-water.md)
 - [ ] [15.3-sum](https://leetcode-cn.com/problems/3-sum) [golang-code](./15-3-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/15.3-sum.md)
