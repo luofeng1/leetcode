@@ -52,7 +52,7 @@
 - [ ] [49.group-anagrams](https://leetcode-cn.com/problems/group-anagrams) [golang-code](./49-group-anagrams.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/49.group-anagrams.md) 
 - [ ] [55.jump-game](https://leetcode-cn.com/problems/jump-game) [golang-code](./55-jump-game.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/55.jump-game.md)
 - [ ] [56.merge-intervals](https://leetcode-cn.com/problems/merge-intervals) [golang-code](./56-merge-intervals.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/56.merge-intervals.md)
-- [ ] [62.unique-paths](https://leetcode-cn.com/problems/unique-paths) [golang-code](./62-unique-paths.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/62.unique-paths.md )
+- [x] [62. 不同路径](https://leetcode-cn.com/problems/unique-paths) [golang-code](./62-unique-paths.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/62.unique-paths.md )
 - [ ] [73.set-matrix-zeroes](https://leetcode-cn.com/problems/set-matrix-zeroes) [golang-code](./73-set-matrix-zeroes.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/73.set-matrix-zeroes.md )
 - [ ] [75.sort-colors](https://leetcode-cn.com/problems/sort-colors) [golang-code](./75-sort-colors.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/75.sort-colors.md)
 - [ ] [78.subsets](https://leetcode-cn.com/problems/subsets) [golang-code](./78-subsets.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/78.subsets.md)
