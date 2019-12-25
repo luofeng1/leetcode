@@ -125,3 +125,7 @@
 - [ ] [301.remove-invalid-parentheses](https://leetcode-cn.com/problems/remove-invalid-parentheses) [golang-code](./301-remove-invalid-parentheses.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/remove-invalid-parentheses.md)
 - [ ] [460.lfu-cache](https://leetcode-cn.com/problems/lfu-cache) [golang-code](./460-lfu-cache.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/lfu-cache.md)
 - [ ] [1168.optimize-water-distribution-in-a-village](https://leetcode-cn.com/problems/optimize-water-distribution-in-a-village) [golang-code](./1168-optimize-water-distribution-in-a-village.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/optimize-water-distribution-in-a-village-cn.md)
+
+#### 算法专项
+* KMP 算法
+    - [x] [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) [golang-code](./28-implement-strstr.go) [解析](https://leetcode-cn.com/problems/implement-strstr/solution/kmp-suan-fa-xiang-jie-by-labuladong/)
