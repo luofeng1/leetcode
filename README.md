@@ -103,7 +103,7 @@
 - [ ] [609.find-duplicate-file-in-system](https://leetcode-cn.com/problems/find-duplicate-file-in-system) [golang-code](./609-find-duplicate-file-in-system.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/609.find-duplicate-file-in-system.md)
 - [ ] [875.koko-eating-bananas](https://leetcode-cn.com/problems/koko-eating-bananas) [golang-code](./875-koko-eating-bananas.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/875.koko-eating-bananas.md)
 - [ ] [877.stone-game](https://leetcode-cn.com/problems/stone-game) [golang-code](./877-stone-game.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/877.stone-game.md)
-- [ ] [887.super-egg-drop](https://leetcode-cn.com/problems/super-egg-drop) [golang-code](./887-super-egg-drop.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/887.super-egg-drop.md)
+- [x] [887. 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop) [golang-code](./887-super-egg-drop.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/887.super-egg-drop.md)
 - [ ] [900.rle-iterator](https://leetcode-cn.com/problems/rle-iterator) [golang-code](./900-rle-iterator.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/900.rle-iterator.md)
 - [ ] [912.sort-an-array](https://leetcode-cn.com/problems/sort-an-array) [golang-code](./912-sort-an-array.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/912.sort-an-array.md)
 - [ ] [1031.maximum-sum-of-two-non-overlapping-subarrays](https://leetcode-cn.com/problems/maximum-sum-of-two-non-overlapping-subarrays) [golang-code](./1031-maximum-sum-of-two-non-overlapping-subarrays.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/1031.maximum-sum-of-two-non-overlapping-subarrays.md)
@@ -129,3 +129,6 @@
 #### 算法专项
 * KMP 算法
     - [x] [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) [golang-code](./28-implement-strstr.go) [解析](https://leetcode-cn.com/problems/implement-strstr/solution/kmp-suan-fa-xiang-jie-by-labuladong/)
+* 动态规划:
+    - 887. 鸡蛋掉落
+    - 5. 最长回文子串
