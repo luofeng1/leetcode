@@ -19,7 +19,7 @@
 - [ ] [169.majority-element](https://leetcode-cn.com/problems/majority-element) [golang-code](./169-majority-element.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/169.majority-element.md)
 - [ ] [190.reverse-bits](https://leetcode-cn.com/problems/reverse-bits) [golang-code](./190-reverse-bits.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/190.reverse-bits.md)
 - [ ] [191.number-of-1-bits](https://leetcode-cn.com/problems/number-of-1-bits) [golang-code](./191-number-of-1-bits.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/191.number-of-1-bits.md)
-- [ ] [198.house-robber](https://leetcode-cn.com/problems/house-robber) [golang-code](./198-house-robber.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/198.house-robber.md)
+- [ ] [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber) [golang-code](./198-house-robber.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/198.house-robber.md)
 - [ ] [203.remove-linked-list-elements](https://leetcode-cn.com/problems/remove-linked-list-elements) [golang-code](./203-remove-linked-list-elements.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/203.remove-linked-list-elements.md)
 - [ ] [206.reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list) [golang-code](./206-reverse-linked-list.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/206.reverse-linked-list.md)
 - [ ] [219.contains-duplicate-ii](https://leetcode-cn.com/problems/contains-duplicate-ii) [golang-code](./219-contains-duplicate-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/219.contains-duplicate-ii.md)
@@ -59,7 +59,7 @@
 - [ ] [79.word-search](https://leetcode-cn.com/problems/word-search) [golang-code](./79-word-search.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/79.word-search-en.md)
 - [ ] [86.partition-list](https://leetcode-cn.com/problems/partition-list) [golang-code](./86-partition-list.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/86.partition-list.md)
 - [ ] [90.subsets-ii](https://leetcode-cn.com/problems/subsets-ii) [golang-code](./90-subsets-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/90.subsets-ii.md)
-- [ ] [91.decode-ways](https://leetcode-cn.com/problems/decode-ways) [golang-code](./91-decode-ways.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/91.decode-ways.md)
+- [ ] [91. 解码方法](https://leetcode-cn.com/problems/decode-ways) [golang-code](./91-decode-ways.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/91.decode-ways.md)
 - [ ] [92.reverse-linked-list-ii](https://leetcode-cn.com/problems/reverse-linked-list-ii) [golang-code](./92-reverse-linked-list-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/92.reverse-linked-list-ii.md)
 - [ ] [94.binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal) [golang-code](./94-binary-tree-inorder-traversal.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/94.binary-tree-inorder-traversal.md)
 - [ ] [98.validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree) [golang-code](./98-validate-binary-search-tree.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/98.validate-binary-search-tree.md)
@@ -69,10 +69,10 @@
 - [ ] [129.sum-root-to-leaf-numbers](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers) [golang-code](./129-sum-root-to-leaf-numbers.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/129.sum-root-to-leaf-numbers.md) 
 - [ ] [130.surrounded-regions](https://leetcode-cn.com/problems/surrounded-regions) [golang-code](./130-surrounded-regions.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/130.surrounded-regions.md) 
 - [ ] [131.palindrome-partitioning](https://leetcode-cn.com/problems/palindrome-partitioning) [golang-code](./131-palindrome-partitioning.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/131.palindrome-partitioning.md)
-- [ ] [139.word-break](https://leetcode-cn.com/problems/word-break) [golang-code](./139-word-break.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/139.word-break.md)
+- [ ] [139. 单词拆分](https://leetcode-cn.com/problems/word-break) [golang-code](./139-word-break.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/139.word-break.md)
 - [ ] [144.binary-tree-preorder-traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) [golang-code](./144-binary-tree-preorder-traversal.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/144.binary-tree-preorder-traversal.md)
 - [ ] [150.evaluate-reverse-polish-notation](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation) [golang-code](./150-evaluate-reverse-polish-notation.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/150.evaluate-reverse-polish-notation.md)
-- [ ] [152.maximum-product-subarray](https://leetcode-cn.com/problems/maximum-product-subarray) [golang-code](./152-maximum-product-subarray.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/152.maximum-product-subarray.md)
+- [ ] [152. 乘积最大子序列](https://leetcode-cn.com/problems/maximum-product-subarray) [golang-code](./152-maximum-product-subarray.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/152.maximum-product-subarray.md)
 - [ ] [199.binary-tree-right-side-view](https://leetcode-cn.com/problems/binary-tree-right-side-view) [golang-code](./199-binary-tree-right-side-view.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/199.binary-tree-right-side-view.md)
 - [ ] [200.number-of-islands](https://leetcode-cn.com/problems/number-of-islands) [golang-code](./200-number-of-islands.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/200.number-of-islands.md) 
 - [ ] [201.bitwise-and-of-numbers-range](https://leetcode-cn.com/problems/bitwise-and-of-numbers-range) [golang-code](./201-bitwise-and-of-numbers-range.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/201.bitwise-and-of-numbers-range.md)
@@ -85,9 +85,9 @@
 - [ ] [236.lowest-common-ancestor-of-a-binary-tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree) [golang-code](./236-lowest-common-ancestor-of-a-binary-tree.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/236.lowest-common-ancestor-of-a-binary-tree.md)
 - [ ] [238.product-of-array-except-self](https://leetcode-cn.com/problems/product-of-array-except-self) [golang-code](./238-product-of-array-except-self.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/238.product-of-array-except-self.md)
 - [ ] [240.search-a-2-d-matrix-ii](https://leetcode-cn.com/problems/search-a-2-d-matrix-ii) [golang-code](./240-search-a-2-d-matrix-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/240.search-a-2-d-matrix-ii.md)
-- [ ] [279.perfect-squares](https://leetcode-cn.com/problems/perfect-squares) [golang-code](./279-perfect-squares.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/279.perfect-squares.md)
+- [ ] [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares) [golang-code](./279-perfect-squares.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/279.perfect-squares.md)
 - [ ] [309.best-time-to-buy-and-sell-stock-with-cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown) [golang-code](./309-best-time-to-buy-and-sell-stock-with-cooldown.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/309.best-time-to-buy-and-sell-stock-with-cooldown.md) 
-- [ ] [322.coin-change](https://leetcode-cn.com/problems/coin-change) [golang-code](./322-coin-change.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/322.coin-change.md)
+- [ ] [322. 零钱兑换](https://leetcode-cn.com/problems/coin-change) [golang-code](./322-coin-change.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/322.coin-change.md)
 - [ ] [328.odd-even-linked-list](https://leetcode-cn.com/problems/odd-even-linked-list) [golang-code](./328-odd-even-linked-list.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/328.odd-even-linked-list.md)
 - [ ] [334.increasing-triplet-subsequence](https://leetcode-cn.com/problems/increasing-triplet-subsequence) [golang-code](./334-increasing-triplet-subsequence.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/334.increasing-triplet-subsequence.md)
 - [ ] [365.water-and-jug-problem](https://leetcode-cn.com/problems/water-and-jug-problem) [golang-code](./365-water-and-jug-problem.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/365.water-and-jug-problem.md)
@@ -96,7 +96,7 @@
 - [ ] [445.add-two-numbers-ii](https://leetcode-cn.com/problems/add-two-numbers-ii) [golang-code](./445-add-two-numbers-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/445.add-two-numbers-ii.md)
 - [ ] [454.4-sum-ii](https://leetcode-cn.com/problems/4-sum-ii) [golang-code](./454-4-sum-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/454.4-sum-ii.md)
 - [ ] [474.ones-and-zeros](https://leetcode-cn.com/problems/ones-and-zeros) [golang-code](./474-ones-and-zeros.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/474.ones-and-zeros-en.md)
-- [ ] [494.target-sum](https://leetcode-cn.com/problems/target-sum) [golang-code](./494-target-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/494.target-sum.md)
+- [ ] [494. 目标和](https://leetcode-cn.com/problems/target-sum) [golang-code](./494-target-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/494.target-sum.md)
 - [ ] [516.longest-palindromic-subsequence](https://leetcode-cn.com/problems/longest-palindromic-subsequence) [golang-code](./516-longest-palindromic-subsequence.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/516.longest-palindromic-subsequence.md)
 - [ ] [518.coin-change-2](https://leetcode-cn.com/problems/coin-change-2) [golang-code](./518-coin-change-2.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/518.coin-change-2.md)
 - [ ] [547.friend-circles](https://leetcode-cn.com/problems/friend-circles) [golang-code](./547-friend-circles.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/547.friend-circles-en.md)
@@ -130,5 +130,17 @@
 * KMP 算法
     - [x] [28. 实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) [golang-code](./28-implement-strstr.go) [解析](https://leetcode-cn.com/problems/implement-strstr/solution/kmp-suan-fa-xiang-jie-by-labuladong/)
 * 动态规划:
-    - 887. 鸡蛋掉落
-    - 5. 最长回文子串
+    - [ ] 887. 鸡蛋掉落
+    - [ ] 5. 最长回文子串
+    - [ ] 494. 目标和
+    - [ ] 322. 零钱兑换
+    - [ ] 279. 完全平方数
+    - [ ] 198. 打家劫舍
+    - [ ] 152. 乘积最大子序列
+    - [ ] 139. 单词拆分
+    - [ ] 121. 买卖股票的最佳时机
+    - [ ] 91. 解码方法
+    - [ ] 62. 不同路径
+    - [ ] 53. 最大子序和
+    
+    
