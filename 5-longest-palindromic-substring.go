@@ -79,3 +79,120 @@ func longestPalindromeIsPalindromic(arr *[]string, i, j int, record map[int]map[
 	}
 	return false
 }
+
+/**
+所以，当我们拿到问题的时候，我们可以先用简单的回溯算法解决，然后定义状态，每个状态表示一个节点，然后对应画出递归树。从递归树中，我们很容易可以看出来，是否存在重复子问题，以及重复子问题是如何产生的。以此来寻找规律，看是否能用动态规划解决。
+
+babad
+1. 穷举:
+f(0,0) f(0,1) f(0,2) f(0, 3)
+f(1,1) f(1,2) f(1,3)
+f(2,2) f(2,3) f(2,4)
+f(3,3) f(3,4)
+f(4,4)
+定义状态: 是不是回文字符串; dp(i,j) 代表是不是回文字符串
+dp(i,j) Y => arr[i-1]==arr[j+1] && dp(i-1,j+1)
+i == j => dp(i,j) => Y
+i == j-1 && arr[i-1]==arr[j+1] => Y
+数组:
+*/
+
+/**
+内存占用极高
+*/
+func longestPalindrome2(s string) string {
+	if s == "" {
+		return ""
+	}
+	if len(s) == 1 {
+		return s
+	}
+	if len(s) == 2 {
+		if s[0] == s[1] {
+			return s
+		}
+		return s[0:1]
+	}
+	const (
+		unStar = iota
+		true
+		false
+	)
+	dp := make([][]int, len(s), len(s))
+	var maxIndex int = 1
+	var maxArr = [2]int{0, 1}
+	for i := 0; i < len(s); i++ {
+		dp[i] = make([]int, len(s), len(s))
+		dp[i][i] = true
+	}
+	for i := 1; i < len(s); i++ {
+		for j := 0; j < len(s)-i; j++ {
+			dp[j][j+i] = false
+			if (j == j+i-1 || dp[j+1][j+i-1] == true) && s[j] == s[j+i] {
+				dp[j][j+i] = true
+				if i+1 > maxIndex {
+					maxIndex = i
+					maxArr = [2]int{j, j + i + 1}
+				}
+			}
+		}
+	}
+	return s[maxArr[0]:maxArr[1]]
+}
+
+/**
+间隔, 规律
+*/
+//func longestPalindrome3(s string) string {
+//	if s == "" {
+//		return ""
+//	}
+//	if len(s) == 1 {
+//		return s
+//	}
+//	if len(s) == 2 {
+//		if s[0] == s[1] {
+//			return s
+//		}
+//		return s[0:1]
+//	}
+//	var maxIndex int = 1
+//	var maxArr = [2]int{0, 1}
+//	oddDP := make([]bool, len(s), len(s)) // 不是回文 // 全false 则是回文
+//	twinDP := make([]bool, 0, len(s)-1)
+//	for i := 1; i < len(s); i++ {
+//		twinDP = append(twinDP, s[i-1] != s[i])
+//	}
+//	startX := 0
+//	startY := 2
+//	for i := 2; i < len(s); i++ {
+//		startDpX := startX
+//		startDpY := startY
+//		if i%2 == 1 {
+//			for j := 1; j <= len(oddDP)-1; j++ {
+//				oddDP[j] = oddDP[j] || s[startDpX] != s[startDpY]
+//				if !oddDP[j] && i > maxIndex {
+//					maxIndex = i
+//					maxArr = [2]int{startDpX, startDpY}
+//				}
+//				startDpX += 1
+//				startDpY += 1
+//			}
+//			oddDP = oddDP[1 : len(oddDP)-1]
+//		} else {
+//			for j := 1; j <= len(twinDP)-1; j++ {
+//				twinDP[j] = twinDP[j] || s[startDpX] != s[startDpY]
+//				if !twinDP[j] && i > maxIndex {
+//					maxIndex = i
+//					maxArr = [2]int{startDpX, startDpY}
+//				}
+//				startDpX += 1
+//				startDpY += 1
+//			}
+//			twinDP = twinDP[1 : len(twinDP)-1]
+//		}
+//		startX += 1
+//		startY += 1
+//	}
+//	return s[maxArr[0]:maxArr[1]]
+//}
