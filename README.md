@@ -4,7 +4,7 @@
 ## leetcode 经典题目解析&golang版代码
 
 ### 简单难度
-- [x] [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) [golang-code](./20-valid-parentheses.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/20.validParentheses.md)
+- [ ] [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) [golang-code](./20-valid-parentheses.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/20.validParentheses.md)
 - [x] [26. 删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) [golang-code](./26-remove-duplicates-from-sorted-array.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/26.remove-duplicates-from-sorted-array.md)
 - [x] [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) [golang-code](./53-maximum-subarray.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/53.maximum-sum-subarray-cn.md)
 - [x] [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) [golang-code](./88-merge-sorted-array.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/88.merge-sorted-array.md)
@@ -13,7 +13,7 @@
 - [x] [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) [golang-code](./122-best-time-to-buy-and-sell-stock-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/122.best-time-to-buy-and-sell-stock-ii.md)
 - [x] [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/) [golang-code](./125-valid-palindrome.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/125.valid-palindrome.md)
 - [ ] [136.single-number](https://leetcode-cn.com/problems/single-number) [golang-code](./136-single-number.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/136.single-number.md)
-- [ ] [155.min-stack](https://leetcode-cn.com/problems/min-stack) [golang-code](./155-min-stack.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/155.min-stack.md)
+- [x] [155. 最小栈](https://leetcode-cn.com/problems/min-stack) [golang-code](./155-min-stack.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/155.min-stack.md)
 - [ ] [167.two-sum-ii-input-array-is-sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted) [golang-code](./167-two-sum-ii-input-array-is-sorted.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/167.two-sum-ii-input-array-is-sorted.md)
 - [ ] [172.factorial-trailing-zeroes](https://leetcode-cn.com/problems/factorial-trailing-zeroes) [golang-code](./172-factorial-trailing-zeroes.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/172.factorial-trailing-zeroes.md)
 - [ ] [169.majority-element](https://leetcode-cn.com/problems/majority-element) [golang-code](./169-majority-element.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/169.majority-element.md)
@@ -142,5 +142,8 @@
     - [ ] 91. 解码方法
     - [ ] 62. 不同路径
     - [ ] 53. 最大子序和
-    
+* [腾讯精选练习50题](https://leetcode-cn.com/problemset/all/?listId=ex0k24j)
+    - [x] 栈: 155. 最小栈
+    - [ ] 栈: 20. 有效的括号
+
     
