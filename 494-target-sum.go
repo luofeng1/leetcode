@@ -31,31 +31,37 @@ import "fmt"
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 
+// 暴力解法
 func findTargetSumWays(nums []int, S int) int {
 	if len(nums) == 0 {
 		return 0
 	}
-	var sum int
+	var result int
 
 	dp := []int{nums[0], nums[0] * -1}
+	if (nums[0] == S || -1*nums[0] == S) && len(nums) == 1 {
+		result = 1
+	}
 	for i := 1; i < len(nums); i++ {
 		sum := + nums[i]
 		dep := - nums[i]
 		newDP := []int{}
 		for _, v := range dp {
+			if i == len(nums)-1 {
+				if v+dep == S {
+					result += 1
+				}
+				if v+sum == S {
+					result += 1
+				}
+			}
 			newDP = append(newDP, v+sum, v+dep)
 		}
 		dp = newDP
 	}
 	fmt.Println(dp)
-	for _, v := range dp {
-		if v == S {
-			sum += 1
-		}
-	}
-	return sum
+	return result
 }
-
 
 /**
 我们用 dp[i][j] 表示用数组中的前 i 个元素，组成和为 j 的方案数。考虑第 i 个数 nums[i]，它可以被添加 + 或 -，因此状态转移方程如下：
@@ -66,4 +72,11 @@ dp[i][j] = dp[i - 1][j - nums[i]] + dp[i - 1][j + nums[i]]
 链接：https://leetcode-cn.com/problems/target-sum/solution/mu-biao-he-by-leetcode/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
+*/
+
+/**
+该题难点在于，如何将其转换为背包问题。
+2*sum(N) - sum(P) + sum(P) = S + sum(N) + sum(P)
+=>
+2*sum(N) = S + sum(nums)
+*/

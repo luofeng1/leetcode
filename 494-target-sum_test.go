@@ -23,10 +23,26 @@ func Test_findTargetSumWays(t *testing.T) {
 		{
 			name: "test2",
 			args: args{
-				nums: []int{25, 33, 27, 23, 46, 16, 10, 27, 33, 2, 12, 2, 29, 44, 49, 40, 32, 46, 7, 50},
-				S:    4,
+				nums: []int{1},
+				S:    1,
 			},
 			want: 1,
+		},
+		{
+			name: "test3",
+			args: args{
+				nums: []int{1, 0},
+				S:    1,
+			},
+			want: 2,
+		},
+		{
+			name: "test4",
+			args: args{
+				nums: []int{4, 1, 7, 1, 8, 7, 8, 7, 7, 4},
+				S:    4,
+			},
+			want: 22,
 		},
 	}
 	for _, tt := range tests {
