@@ -45,3 +45,24 @@ func TestNewList(t *testing.T) {
 		})
 	}
 }
+
+func TestListNode_ToArray(t *testing.T) {
+	head := NewList([]int{1, 2, 3, 4, 5})
+	tests := []struct {
+		name string
+		want []int
+	}{
+		{
+			name: "test1",
+			want: []int{1, 2, 3, 4, 5},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			l := head
+			if got := l.ToArray(); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("ToArray() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}

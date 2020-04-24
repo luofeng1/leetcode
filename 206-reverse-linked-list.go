@@ -40,12 +40,9 @@ cur = 3 cur.Next 需提前保存
 func reverseList(head *link.ListNode) *link.ListNode {
 	cur := head
 	var prev *link.ListNode
-	var middle *link.ListNode
+
 	for cur != nil {
-		middle = cur.Next
-		cur.Next = prev
-		prev = cur
-		cur = middle
+		cur.Next, prev, cur = prev, cur, cur.Next
 	}
 	return prev
 }

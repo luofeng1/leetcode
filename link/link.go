@@ -18,3 +18,13 @@ func NewList(arr []int) *ListNode {
 	}
 	return head
 }
+
+func (l *ListNode) ToArray() []int {
+	var arr []int
+	cur := l
+	for cur != nil {
+		arr = append(arr, cur.Val)
+		cur = cur.Next
+	}
+	return arr
+}

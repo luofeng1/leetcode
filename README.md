@@ -148,3 +148,4 @@
 
 * [极客时间推荐]
     - [x] 链表: 206. 反转链表 [golang-code](./206-reverse-linked-list.go)
+    - [ ] 链表: 24. 两两交换链表中的节点 [golang-code](./24-swap-nodes-in-pairs.go)
