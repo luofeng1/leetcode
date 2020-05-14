@@ -1,6 +1,9 @@
 package leetcode
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 /**
 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
@@ -47,23 +50,45 @@ abcadef
 也就是说，如果 s[j]s[j] 在 [i, j)[i,j) 范围内有与 j'j′重复的字符，我们不需要逐渐增加 ii 。
 我们可以直接跳过 [i，j'][i，j′] 范围内的所有元素，并将 ii 变为 j' + 1j′+1。
 */
+//func lengthOfLongestSubstring(s string) int {
+//	if len(s) == 0 {
+//		return 0
+//	}
+//	slidingWindow := map[uint8]int{s[0]: 0}
+//	var start int
+//	var end int
+//	var max int = 1
+//	for i := 1; i < len(s); i++ {
+//		if v, exists := slidingWindow[s[i]]; exists && v >= start {
+//			start = v + 1
+//			slidingWindow[s[i]] = i
+//			continue
+//		}
+//		end = i
+//		max = int(math.Max(float64(max), float64(end-start+1)))
+//		slidingWindow[s[i]] = i
+//	}
+//	return max
+//}
+
 func lengthOfLongestSubstring(s string) int {
 	if len(s) == 0 {
 		return 0
 	}
-	slidingWindow := map[uint8]int{s[0]: 0}
-	var start int
-	var end int
-	var max int = 1
-	for i := 1; i < len(s); i++ {
-		if v, exists := slidingWindow[s[i]]; exists && v >= start {
-			start = v + 1
-			slidingWindow[s[i]] = i
+	slideWindow := map[int32]int{}
+	max := 1
+	start := 0
+	for k, v := range s {
+		if val, exits := slideWindow[v]; !exits || val < start {
+			slideWindow[v] = k
+			max = int(math.Max(float64(max), float64(k-start+1)))
+			fmt.Printf("max: %d start: %d k: %d v: %v slide: %v \n", max, start, k, string(rune(v)), slideWindow[v])
 			continue
 		}
-		end = i
-		max = int(math.Max(float64(max), float64(end-start+1)))
-		slidingWindow[s[i]] = i
+		start = slideWindow[v] + 1
+		slideWindow[v] = k
+		fmt.Printf("unexits max: %d start: %d k: %d v: %v slide: %v \n", max, start, k, string(rune(v)), slideWindow[v])
 	}
+	fmt.Printf("finnal max: %d start: %d slide: %v \n", max, start, slideWindow)
 	return max
 }
