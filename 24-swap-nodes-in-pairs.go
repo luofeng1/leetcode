@@ -1,6 +1,10 @@
 package leetcode
 
-import "github.com/luofeng1/leetcode/link"
+import (
+	"fmt"
+
+	"github.com/luofeng1/leetcode/link"
+)
 
 /**
 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
@@ -24,5 +28,15 @@ import "github.com/luofeng1/leetcode/link"
  * }
  */
 func swapPairs(head *link.ListNode) *link.ListNode {
-	return nil
+	pre := head.Next
+	temp := head
+
+	for temp != nil && temp.Next != nil {
+		fmt.Println(temp.ToArray(), "1 \n ")
+		a := temp
+		b := a.Next
+		a.Next, b.Next, temp.Next, temp = b.Next.Next, a, b.Next.Next, b.Next
+		fmt.Print(pre.ToArray(), temp.ToArray(), "\n")
+	}
+	return pre
 }
