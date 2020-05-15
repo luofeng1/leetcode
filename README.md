@@ -151,5 +151,5 @@
     - [ ] 链表: 24. 两两交换链表中的节点 [golang-code](./24-swap-nodes-in-pairs.go)
 
 * [leetcode字节跳动题库]
-    - [x] [数组][哈希表] 3. 无重复字符的最长子串 [golang-code](.3-longest-substring-without-repeating-characters.go)
-
+    * `select * from "题库" where "难度" = '中等' order by "出题频率" desc;`
+        * [x] 146. LRU缓存机制 [golang-code](./146-lru-cache.go) [`设计`]
