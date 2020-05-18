@@ -155,4 +155,5 @@
         * [x] 146. LRU缓存机制 [golang-code](./146-lru-cache.go) [`设计`]
         * [x] 2. 两数相加 [golang-code](./2-add-two-numbers.go) [`链表`]
         * [x] 5. 最长回文子串 [golang-code](./5-longest-palindromic-substring.go) [`动态规划`]
-        * [ ] 56. 合并区间 [golang-code](./56-merge-intervals.go) [`排序`][`数组`]
+        * [ ] 56. 合并区间 [golang-code](./56-merge-intervals.go) [`排序`] [`数组`]
+        * [x] 322. 零钱兑换 [golang-code](./322-coin-change.go) [`动态规划`]
