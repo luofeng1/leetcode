@@ -51,7 +51,7 @@ func longestPalindrome(s string) string {
 	sArr := strings.Split(s, "")
 	maxStr := ""
 	maxAmount := 0
-	record := map[int]map[int]bool{}
+	record := map[int]map[int]bool{} // 注意: map性能比数组性能差了很多;此处用map会导致超时
 	for i := len(sArr) - 1; i >= 0; i-- {
 		for j := i; j < len(sArr); j++ {
 			isPalindromic := longestPalindromeIsPalindromic(&sArr, i, j, record)
@@ -141,58 +141,118 @@ func longestPalindrome2(s string) string {
 }
 
 /**
+动态规划: 求最值 「自底向上」
+	[穷举] 中 包含 [重叠子问题]
+	一般包含 [最优子结构] 正确的 [状态转移方程]
+	明确「状态」 -> 定义 dp 数组/函数的含义 -> 明确「选择」-> 明确 base case。
+	先暴力 -> 确定其含有重叠子问题
+*/
+
+/**
+动态规划: 凑零钱问题;
+先看下题目：给你k种面值的硬币，面值分别为c1, c2 ... ck，
+每种硬币的数量无限，再给一个总金额amount，问你最少需要几枚硬币凑出这个金额，
+如果不可能凑出，算法返回 -1 。
+// coins 中是可选硬币面值，amount 是目标金额
+int coinChange(int[] coins, int amount);
+*/
+
+/**
+暴力方法:
+1元 2元 5元
+凑成 11元
+1
+2
+5
+1 2
+1 5
+2 5
+1 2 5
+
+确定状态: 也就是原问题和子问题中变化的变量
+由于硬币数量无限，所以唯一的状态就是目标金额amount。
+然后确定dp函数的定义：函数 dp(n)表示，当前的目标金额是n，至少需要dp(n)个硬币凑出该金额。
+
+*/
+
+/**
+给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
+示例 1：
+输入: "babad"
+输出: "bab"
+注意: "aba" 也是一个有效答案。
+示例 2：
+输入: "cbbd"
+输出: "bb"
+
+确定状态: 变化: 谁开始,谁结束, 回文长度 dp(start, end) = Y/N
+bab
+1-1 shi
+1-2
+1-3
+2-2 shi
+2-3
+3-3 shi
+[
+start = end len = 1
+end > start:
+{
+	dp(start, end) = dp(start+1, end-1) != 0 ?
+		dp(start+1, end-1) + (str[start] === str[end] ? 2 : 0):
+		0;
+}
+]
+*/
+
+/**
 间隔, 规律
 */
-//func longestPalindrome3(s string) string {
-//	if s == "" {
-//		return ""
-//	}
-//	if len(s) == 1 {
-//		return s
-//	}
-//	if len(s) == 2 {
-//		if s[0] == s[1] {
-//			return s
-//		}
-//		return s[0:1]
-//	}
-//	var maxIndex int = 1
-//	var maxArr = [2]int{0, 1}
-//	oddDP := make([]bool, len(s), len(s)) // 不是回文 // 全false 则是回文
-//	twinDP := make([]bool, 0, len(s)-1)
-//	for i := 1; i < len(s); i++ {
-//		twinDP = append(twinDP, s[i-1] != s[i])
-//	}
-//	startX := 0
-//	startY := 2
-//	for i := 2; i < len(s); i++ {
-//		startDpX := startX
-//		startDpY := startY
-//		if i%2 == 1 {
-//			for j := 1; j <= len(oddDP)-1; j++ {
-//				oddDP[j] = oddDP[j] || s[startDpX] != s[startDpY]
-//				if !oddDP[j] && i > maxIndex {
-//					maxIndex = i
-//					maxArr = [2]int{startDpX, startDpY}
-//				}
-//				startDpX += 1
-//				startDpY += 1
-//			}
-//			oddDP = oddDP[1 : len(oddDP)-1]
-//		} else {
-//			for j := 1; j <= len(twinDP)-1; j++ {
-//				twinDP[j] = twinDP[j] || s[startDpX] != s[startDpY]
-//				if !twinDP[j] && i > maxIndex {
-//					maxIndex = i
-//					maxArr = [2]int{startDpX, startDpY}
-//				}
-//				startDpX += 1
-//				startDpY += 1
-//			}
-//			twinDP = twinDP[1 : len(twinDP)-1]
-//		}
-//		startX += 1
-//		startY += 1
-//	}
-//	return s[maxArr[0]:maxArr[1]]
-//}
+func longestPalindrome3(s string) string {
+	if s == "" {
+		return ""
+	}
+	if len(s) == 1 {
+		return s
+	}
+	if len(s) == 2 {
+		if s[0] == s[1] {
+			return s
+		}
+		return s[0:1]
+	}
+	lenMax := 1
+	start := 0
+	end := 0
+	dp := make([][]bool, len(s), len(s))
+	for i := 0; i < len(s); i++ {
+		dp[i] = make([]bool, len(s), len(s))
+		dp[i][i] = true
+		if i+1 < len(s) {
+			if s[i] == s[i+1] {
+				dp[i][i+1] = true
+				lenMax = 2
+				start = i
+				end = i + 1
+			} else {
+				dp[i][i+1] = false
+			}
+		}
+		//fmt.Printf("i:%d max:%v \n", i, dp[i])
+	}
+	for j := 2; j < len(s); j++ {
+		for i := 0; i <= j-2; i++ {
+			if dp[i+1][j-1] && s[i] == s[j] {
+				dp[i][j] = true
+				if newMax := j - i + 1; newMax > lenMax {
+					lenMax = newMax
+					start = i
+					end = j
+				}
+			} else {
+				dp[i][j] = false
+			}
+			//fmt.Printf("i:%d j:%d max:%t pre:%t i:%s j:%s lenMax:%d \n", i, j, dp[i][j], dp[i+1][j-1], string(s[i]), string(s[j]), lenMax)
+		}
+	}
+	return s[start : end+1]
+}

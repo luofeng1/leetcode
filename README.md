@@ -153,3 +153,5 @@
 * [leetcode字节跳动题库]
     * `select * from "题库" where "难度" = '中等' order by "出题频率" desc;`
         * [x] 146. LRU缓存机制 [golang-code](./146-lru-cache.go) [`设计`]
+        * [x] 2. 两数相加 [golang-code](./2-add-two-numbers.go) [`链表`]
+        * [x] 5. 最长回文子串 [golang-code](./5-longest-palindromic-substring.go) [`动态规划`]
