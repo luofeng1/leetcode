@@ -157,3 +157,4 @@
         * [x] 5. 最长回文子串 [golang-code](./5-longest-palindromic-substring.go) [`动态规划`]
         * [ ] 56. 合并区间 [golang-code](./56-merge-intervals.go) [`排序`] [`数组`]
         * [x] 322. 零钱兑换 [golang-code](./322-coin-change.go) [`动态规划`]
+        * [x] 300. 最长上升子序列 [golang-code](./300-longest-increasing-subsequence.go) [`动态规划`]
