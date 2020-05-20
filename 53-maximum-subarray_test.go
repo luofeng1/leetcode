@@ -121,3 +121,43 @@ func Test_maxSubArray3(t *testing.T) {
 		})
 	}
 }
+
+func Test_maxSubArray4(t *testing.T) {
+	type args struct {
+		nums []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "test1",
+			args: args{
+				nums: []int{-2, 1, -3, 4, -1, 2, 1, -5, 4},
+			},
+			want: 6,
+		},
+		{
+			name: "test2",
+			args: args{
+				nums: []int{-2, -1},
+			},
+			want: -1,
+		},
+		{
+			name: "test3",
+			args: args{
+				nums: []int{1, 2, -1, -2, 2, 1, -2, 1},
+			},
+			want: 3,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := maxSubArray4(tt.args.nums); got != tt.want {
+				t.Errorf("maxSubArray4() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}

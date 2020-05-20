@@ -118,13 +118,31 @@ func maxSubArray2max2(maxSum, num int) int {
 dp[i] - 表示到当前位置 i 的最大子序列和
 状态转移方程为： dp[i] = max(dp[i-1] + nums[i], nums[i])
 初始化：dp[0] = nums[0]
- */
+*/
 func maxSubArray3(nums []int) int {
 	maxSum := nums[0]
 	for i := 1; i < len(nums); i++ {
 		nums[i] = maxSubArray2max2(0, nums[i-1]) + nums[i]
 		if nums[i] > maxSum {
 			maxSum = nums[i]
+		}
+	}
+	return maxSum
+}
+
+/**
+	动态规划:最值问题;
+	变化状态: 第几位结束;
+		dp(n) 表示 第 n 个 结尾 最大和为 dp(n)
+	状态转移方程: dp(n) = max(dp(n-1) + nums[n], dp(n-1))
+ */
+func maxSubArray4(nums []int) int {
+	maxSum := nums[0]
+	currentValue := nums[0]
+	for i := 1; i < len(nums); i++ {
+		currentValue = maxSubArray2max2(currentValue + nums[i], nums[i])
+		if currentValue > maxSum {
+			maxSum = currentValue
 		}
 	}
 	return maxSum

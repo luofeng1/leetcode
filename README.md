@@ -159,3 +159,4 @@
         * [x] 322. 零钱兑换 [golang-code](./322-coin-change.go) [`动态规划`]
         * [x] 300. 最长上升子序列 [golang-code](./300-longest-increasing-subsequence.go) [`动态规划`]
         * [x] 221. 最大正方形 [golang-code](./221-maximal-square.go) [`动态规划`]
+        * [x] 53. 最大子序和 [golang-code](./53-maximum-subarray.go) [`动态规划`]
