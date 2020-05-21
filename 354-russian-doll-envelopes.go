@@ -53,21 +53,6 @@ func maxEnvelopes(envelopes [][]int) int {
 	return maxEnvelopes
 }
 
-//func maxEnvelopesBinarySearch(dp []int, length, v int) int {
-//	l, r := 0, length-1
-//	for l <= r {
-//		mid := l + (r-l)/2
-//		if dp[mid] == v {
-//			return mid
-//		} else if dp[mid] > v {
-//			r = mid - 1
-//		} else {
-//			l = mid + 1
-//		}
-//	}
-//	return l
-//}
-
 type maxEnvelopesSort [][]int
 
 //Len()
