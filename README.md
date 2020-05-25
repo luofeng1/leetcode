@@ -161,4 +161,5 @@
         * [x] 221. 最大正方形 [golang-code](./221-maximal-square.go) [`动态规划`]
         * [x] 53. 最大子序和 [golang-code](./53-maximum-subarray.go) [`动态规划`]
         * [x] 120. 三角形最小路径和 [golang-code](./120-triangle.go) [`动态规划`]
-        * [x] 354. 俄罗斯套娃信封问题 [golang-code](./354-russian-doll-envelopes.go) [`动态规划`s] [`排序`]
+        * [x] 354. 俄罗斯套娃信封问题 [golang-code](./354-russian-doll-envelopes.go) [`动态规划`] [`排序`]
+        * [x] 148. 排序链表 [golang-code](./148-sort-list.go) [`链表`] [`排序`]
