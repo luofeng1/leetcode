@@ -37,18 +37,29 @@ cur = 3 cur.Next 需提前保存
 
 链表思路:从中间获取一个;看如何去操作
 */
-func reverseList(head *link.ListNode) *link.ListNode {
-	cur := head
-	var prev *link.ListNode
-
-	for cur != nil {
-		cur.Next, prev, cur = prev, cur, cur.Next
-	}
-	return prev
-}
+//func reverseList(head *link.ListNode) *link.ListNode {
+//	cur := head
+//	var prev *link.ListNode
+//
+//	for cur != nil {
+//		c
+//	}
+//	return prev
+//}
 
 /**
 输入: [1,2,3,4,5]
 输出: [5,4,3,2,1]
 预期结果: [5,4,3,2,1]
 */
+
+// 递归解题
+func reverseList(head *link.ListNode) *link.ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	last := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return last
+}

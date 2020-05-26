@@ -29,7 +29,7 @@ func Test_reverseList(t *testing.T) {
 			if got := reverseList(tt.args.head); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("reverseList() = %v, want %v", got, tt.want)
 			} else {
-				fmt.Print(got.ToArray())
+				fmt.Println(got.ToArray())
 			}
 		})
 	}
