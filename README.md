@@ -39,7 +39,7 @@
 - [x] [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring) [golang-code](./5-longest-palindromic-substring.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/5.longest-palindromic-substring.md)
 - [ ] [11.container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water) [golang-code](./11-container-with-most-water.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/11.container-with-most-water.md)
 - [ ] [15.3-sum](https://leetcode-cn.com/problems/3-sum) [golang-code](./15-3-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/15.3-sum.md)
-- [ ] [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) [golang-code](./19-remove-nth-node-from-end-of-list.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/19.removeNthNodeFromEndofList.md)
+- [x] [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) [golang-code](./19-remove-nth-node-from-end-of-list.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/19.removeNthNodeFromEndofList.md)
 - [ ] [24. Swap Nodes In Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) [golang-code](./24-swap-nodes-in-pairs.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/24.swapNodesInPairs.md)
 - [ ] [29.divide-two-integers](https://leetcode-cn.com/problems/divide-two-integers) [golang-code](./29-divide-two-integers.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/29.divide-two-integers.md)
 - [ ] [31.next-permutation](https://leetcode-cn.com/problems/next-permutation) [golang-code](./31-next-permutation.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/31.next-permutation.md)
@@ -153,7 +153,6 @@
 * [leetcode字节跳动题库]
     * `select * from "题库" where "难度" = '中等' order by "出题指数" desc;`
         * [x] 146. LRU缓存机制 [golang-code](./146-lru-cache.go) [`设计`]
-        * [x] 2. 两数相加 [golang-code](./2-add-two-numbers.go) [`链表`]
         * [x] 5. 最长回文子串 [golang-code](./5-longest-palindromic-substring.go) [`动态规划`]
         * [ ] 56. 合并区间 [golang-code](./56-merge-intervals.go) [`排序`] [`数组`]
         * [x] 322. 零钱兑换 [golang-code](./322-coin-change.go) [`动态规划`]
@@ -162,6 +161,8 @@
         * [x] 53. 最大子序和 [golang-code](./53-maximum-subarray.go) [`动态规划`]
         * [x] 120. 三角形最小路径和 [golang-code](./120-triangle.go) [`动态规划`]
         * [x] 354. 俄罗斯套娃信封问题 [golang-code](./354-russian-doll-envelopes.go) [`动态规划`] [`排序`]
+        * [x] 2. 两数相加 [golang-code](./2-add-two-numbers.go) [`链表`]
         * [x] 148. 排序链表 [golang-code](./148-sort-list.go) [`链表`] [`排序`]
         * [x] 92. 反转链表 II [golang-code](./92-reverse-linked-list-ii.go) [`链表`]
         * [x] 445. 两数相加 II [golang-code](./445-add-two-numbers-ii.go) [`链表`]
+        * [x] 19. 删除链表的倒数第N个节点 [golang-code](./19-remove-nth-node-from-end-of-list.go) [`链表`]
