@@ -166,3 +166,4 @@
         * [x] 92. 反转链表 II [golang-code](./92-reverse-linked-list-ii.go) [`链表`]
         * [x] 445. 两数相加 II [golang-code](./445-add-two-numbers-ii.go) [`链表`]
         * [x] 19. 删除链表的倒数第N个节点 [golang-code](./19-remove-nth-node-from-end-of-list.go) [`链表`]
+        * [x] 82. 删除排序链表中的重复元素 II [golang-code](./82-remove-duplicates-from-sorted-list-ii.go) [`链表`]
