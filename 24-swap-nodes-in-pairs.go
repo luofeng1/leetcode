@@ -1,8 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
-
 	"github.com/luofeng1/leetcode/link"
 )
 
@@ -28,15 +26,25 @@ import (
  * }
  */
 func swapPairs(head *link.ListNode) *link.ListNode {
-	pre := head.Next
-	temp := head
-
-	for temp != nil && temp.Next != nil {
-		fmt.Println(temp.ToArray(), "1 \n ")
-		a := temp
-		b := a.Next
-		a.Next, b.Next, temp.Next, temp = b.Next.Next, a, b.Next.Next, b.Next
-		fmt.Print(pre.ToArray(), temp.ToArray(), "\n")
+	if head == nil || head.Next == nil {
+		return head
 	}
-	return pre
+
+	dummy := &link.ListNode{Next: head}
+	pre := dummy
+	cur := head
+	/**
+	2 -> 1 -> 3 -> 4 -> nil
+	pre = 1 cur = 3
+			┌--------→
+	2 -> 1  3 <- 4  nil
+		 └-------→
+
+	pre = 3 cur = nil
+	*/
+	for cur != nil && cur.Next != nil {
+		pre, cur, pre.Next, cur.Next, cur.Next.Next = cur, cur.Next.Next, cur.Next, cur.Next.Next, cur
+		// fmt.Println(pre.ToArray(), cur.ToArray(), dummy.ToArray())
+	}
+	return dummy.Next
 }
