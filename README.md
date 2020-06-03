@@ -175,3 +175,4 @@
         * [x] 105. 从前序与中序遍历序列构造二叉树 [golang-code](./105-construct-binary-tree-from-preorder-and-inorder-traversal.go) [`树`] [`深度优先搜索`] [`数组`]
         * [x] 98. 验证二叉搜索树 [golang-code](./98-validate-binary-search-tree.go) [`树`] [`深度优先搜索`]
         * [x] 94. 二叉树的中序遍历 [golang-code](./94-binary-tree-inorder-traversal.go) [`树`] [`栈`] [`哈希表`]
+        * [x] 236. 二叉树的最近公共祖先 [golang-code](./236-lowest-common-ancestor-of-a-binary-tree.go) [`树`]
