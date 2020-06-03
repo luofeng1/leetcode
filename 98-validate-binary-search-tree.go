@@ -1,6 +1,8 @@
 package leetcode
 
 import (
+	"math"
+
 	"github.com/luofeng1/leetcode/tree"
 )
 
@@ -45,15 +47,39 @@ import (
  * }
  */
 func isValidBST(root *tree.TreeNode) bool {
-	return false
+	result := isValidBSTByMiddle(root)
+	if len(result) <= 1 {
+		return true
+	}
+	// fmt.Println("中序:", result) // 利用中序遍历的结果 判断
+	for i := 1; i < len(result); i++ {
+		if result[i] <= result[i-1] {
+			return false
+		}
+	}
+	return true
 }
 
 // isValidBSTByMiddle 中序遍历
-func isValidBSTByMiddle(root *tree.TreeNode, arr *[]int) {
+func isValidBSTByMiddle(root *tree.TreeNode) []int {
 	if root == nil {
-		return
+		return []int{}
 	}
-	isValidBSTByMiddle(root.Left, arr)
-	*arr = append(*arr, root.Val)
-	isValidBSTByMiddle(root.Right, arr)
+	return append(append(isValidBSTByMiddle(root.Left), root.Val), isValidBSTByMiddle(root.Right)...)
+}
+
+// 利用递归解
+func isValidBST_2(root *tree.TreeNode) bool {
+	return isValidBSTByRecursion(root, math.MinInt64, math.MaxInt64)
+}
+
+// 始终提供最低值&最高值
+func isValidBSTByRecursion(root *tree.TreeNode, lower, upper int) bool {
+	if root == nil {
+		return true
+	}
+	if root.Val >= upper || root.Val <= lower {
+		return false
+	}
+	return isValidBSTByRecursion(root.Left, lower, root.Val) && isValidBSTByRecursion(root.Right, root.Val, upper)
 }
