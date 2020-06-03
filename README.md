@@ -172,3 +172,4 @@
         * [x] 102. 二叉树的层序遍历 [golang-code](./102-binary-tree-level-order-traversal.go) [`树`] [`广度优先搜索`]
         * [x] 199. 二叉树的右视图 [golang-code](./199-binary-tree-right-side-view.go) [`树`] [`广度优先搜索`] [`深度优先搜索`]
         * [x] 103. 二叉树的锯齿形层次遍历 [golang-code](./103-binary-tree-zigzag-level-order-traversal.go) [`树`] [`广度优先搜索`] [`栈`]
+        * [x] 105. 从前序与中序遍历序列构造二叉树 [golang-code](./105-construct-binary-tree-from-preorder-and-inorder-traversal.go) [`树`] [`深度优先搜索`] [`数组`]
