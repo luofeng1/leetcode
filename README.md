@@ -46,7 +46,7 @@
 - [ ] [33.search-in-rotated-sorted-array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array) [golang-code](./33-search-in-rotated-sorted-array.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/33.search-in-rotated-sorted-array.md) 
 - [ ] [39.combination-sum](https://leetcode-cn.com/problems/combination-sum) [golang-code](./39-combination-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/39.combination-sum.md)
 - [ ] [40.combination-sum-ii](https://leetcode-cn.com/problems/combination-sum-ii) [golang-code](./40-combination-sum-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/40.combination-sum-ii.md)
-- [ ] [46.permutations](https://leetcode-cn.com/problems/permutations) [golang-code](./46-permutations.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/46.permutations.md)
+- [x] [46. 全排列](https://leetcode-cn.com/problems/permutations) [golang-code](./46-permutations.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/46.permutations.md)
 - [ ] [47.permutations-ii](https://leetcode-cn.com/problems/permutations-ii) [golang-code](./47-permutations-ii.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/47.permutations-ii.md)
 - [ ] [48.rotate-image](https://leetcode-cn.com/problems/rotate-image) [golang-code](./48-rotate-image.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/48.rotate-image.md)
 - [ ] [49.group-anagrams](https://leetcode-cn.com/problems/group-anagrams) [golang-code](./49-group-anagrams.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/49.group-anagrams.md) 
@@ -119,7 +119,7 @@
 - [ ] [124.binary-tree-maximum-path-sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum) [golang-code](./124-binary-tree-maximum-path-sum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/binary-tree-maximum-path-sum.md)
 - [ ] [128.longest-consecutive-sequence](https://leetcode-cn.com/problems/longest-consecutive-sequence) [golang-code](./128-longest-consecutive-sequence.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/longest-consecutive-sequence.md)
 - [ ] [145.binary-tree-postorder-traversal](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) [golang-code](./145-binary-tree-postorder-traversal.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/binary-tree-postorder-traversal.md)
-- [ ] [146.lru-cache](https://leetcode-cn.com/problems/lru-cache) [golang-code](./146-lru-cache.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/lru-cache.md)
+- [x] [146. LRU缓存机制](https://leetcode-cn.com/problems/lru-cache) [golang-code](./146-lru-cache.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/lru-cache.md)
 - [ ] [239.sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum) [golang-code](./239-sliding-window-maximum.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/sliding-window-maximum.md)
 - [ ] [295.find-median-from-data-stream](https://leetcode-cn.com/problems/find-median-from-data-stream) [golang-code](./295-find-median-from-data-stream.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/find-median-from-data-stream.md)
 - [ ] [301.remove-invalid-parentheses](https://leetcode-cn.com/problems/remove-invalid-parentheses) [golang-code](./301-remove-invalid-parentheses.go) [解析](https://github.com/azl397985856/leetcode/blob/master/problems/remove-invalid-parentheses.md)
@@ -162,6 +162,9 @@
             * [x] 53. 最大子序和 [golang-code](./53-maximum-subarray.go) [`动态规划`]
             * [x] 120. 三角形最小路径和 [golang-code](./120-triangle.go) [`动态规划`]
             * [x] 354. 俄罗斯套娃信封问题 [golang-code](./354-russian-doll-envelopes.go) [`动态规划`] [`排序`]
+            * [ ] 91. [`动态规划`] [`字符串`]
+            * [ ] 62. [`动态规划`] [`数组`]
+            * [ ] 152. [`动态规划`] [`字符串`]
         - 链表
             * [x] 2. 两数相加 [golang-code](./2-add-two-numbers.go) [`链表`]
             * [x] 148. 排序链表 [golang-code](./148-sort-list.go) [`链表`] [`排序`]
@@ -184,3 +187,17 @@
             * [x] 236. 二叉树的最近公共祖先 [golang-code](./236-lowest-common-ancestor-of-a-binary-tree.go) [`树`]
         - 回溯算法
             * [x] 46. 全排列 [golang-code](./46-permutations.go) [`回溯算法`]
+            * [x] 93. 复原IP地址 [golang-code](./93-restore-ip-addresses.go) [`回溯算法`] [`字符串`]
+            * [ ] 22. 括号生成 [golang-code](./22-generate-parentheses.go) [`回溯算法`] [`字符串`]
+            * [ ] 79. 单词搜索 [golang-code](./79-word-search.go) [`回溯算法`] [`数组`]
+            * [ ] 78. 子集 [golang-code](./78-subsets.go) [`回溯算法`] [`数组`] [`位运算`]
+            * [ ] 17. 电话号码的字母组合 [golang-code](./17-letter-combinations-of-a-phone-number.go) [`回溯算法`] [`数组`] [`位运算`]
+            * [ ] 39. 组合总和 [golang-code](./39-combination-sum.go) [`回溯算法`] [`数组`]
+        - 分治算法
+            * [ ] 215. 数组中的第K个最大元素 [golang-code](./215-kth-largest-element-in-an-array.go) [`分治算法`] [`堆`]
+            * [ ] 240. 搜索二维矩阵 II [golang-code](./240-search-a-2d-matrix-ii.go) [`分治算法`] [`二分查找`]
+        - 二分查找
+            * [ ] 33. 搜索旋转排序数组 [golang-code](./33-search-in-rotated-sorted-array.go) [`二分查找`] [`数组`]
+            * [ ] 34. [`二分查找`] [`数组`]
+            * [ ] 287. [`二分查找`] [`数组`] [`双指针`]
+            * [ ] 50. [`二分查找`] [`数学`]
