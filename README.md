@@ -189,7 +189,7 @@
             * [x] 46. 全排列 [golang-code](./46-permutations.go) [`回溯算法`]
             * [x] 93. 复原IP地址 [golang-code](./93-restore-ip-addresses.go) [`回溯算法`] [`字符串`]
             * [x] 22. 括号生成 [golang-code](./22-generate-parentheses.go) [`回溯算法`] [`字符串`]
-            * [ ] 79. 单词搜索 [golang-code](./79-word-search.go) [`回溯算法`] [`数组`]
+            * [x] 79. 单词搜索 [golang-code](./79-word-search.go) [`回溯算法`] [`数组`]
             * [ ] 78. 子集 [golang-code](./78-subsets.go) [`回溯算法`] [`数组`] [`位运算`]
             * [ ] 17. 电话号码的字母组合 [golang-code](./17-letter-combinations-of-a-phone-number.go) [`回溯算法`] [`数组`] [`位运算`]
             * [ ] 39. 组合总和 [golang-code](./39-combination-sum.go) [`回溯算法`] [`数组`]
